@@ -64,6 +64,7 @@ Alapuolella ohjeet.
 Avaa oikea tiedosto sijainti Powershellissä ja aja seuraava komento:
 
 ./server.ps1
+(verkko luodaan täällä komennolla: 'docker network create mynetwork 2>$null')
 
 Voit tarkistaa toiminnon siirtymällä ohjelman päätteeksi tulleeseen osoitteeseen.
 
