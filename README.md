@@ -90,6 +90,7 @@ ls clientdata
 cat /clientdata/randomfile.txt
 
 (Poistu kontin sisältä)
+
 exit
 
 ### 3. Siivoa jälkesi
