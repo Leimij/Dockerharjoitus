@@ -78,12 +78,15 @@ Ohjelma ilmoittaa, että kaikki on onnistunut
 Voit tarkistaa toiminnon tekemällä seuraavat asiat:
 
 (ajetaan kontti väliaikaisena kohteena)
+
 docker run -it --rm -v clientvol:/clientdata python:3.12-slim sh
 
 (Varmista, että clientdata kansio löytyy asiaskontista)
+
 ls clientdata
 
 (Varmista, että clientdata kansiosta löytyy randomfile, jonka sisällä on pitkä merkkijono)
+
 cat /clientdata/randomfile.txt
 
 (Poistu kontin sisältä)
@@ -94,8 +97,13 @@ exit
 Jotta tietokoneellesi ei jää pyörimään mitään turhaa tulee meidän sulkea ja poistaa kaikki ajamamme kontit
 
 Suorita seuraavat komennot powershellissä:
+
 docker stop $(docker ps -q)
+
 docker rm $(docker ps -aq)
+
 docker network rm mynetwork
+
 docker volume rm servervol
+
 docker volume rm clientvol
